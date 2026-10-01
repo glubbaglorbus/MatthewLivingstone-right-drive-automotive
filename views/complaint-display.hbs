@@ -1,0 +1,17 @@
+<h2>Complaint Submitted</h2>
+
+<p><strong>Name:</strong> {{complaint.fullName}}</p>
+<p><strong>Email:</strong> {{complaint.email}}</p>
+<p><strong>Phone:</strong> {{complaint.phone}}</p>
+
+<p><strong>Vehicle:</strong> {{complaint.vehicleMake}} {{complaint.vehicleModel}}</p>
+<p><strong>VIN:</strong> {{complaint.vin}}</p>
+
+<p><strong>Subject:</strong> {{complaint.subject}}</p>
+<p><strong>Description:</strong> {{complaint.description}}</p>
+
+{{#if complaint.imagePath}}
+  <img src="{{complaint.imagePath}}" width="200">
+{{/if}}
+
+<p><strong>Expected Review Date:</strong> {{reviewDate}}</p>
